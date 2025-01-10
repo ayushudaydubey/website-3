@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
   overflow-x: hidden;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -16,7 +17,7 @@ body {
 
 
 nav {
-  height: 10vh;
+ 
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -32,13 +33,14 @@ nav {
 .logo{
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-items: center;
+  gap: 5px;
 }
 .logo i{
-  font-size: 70px;
+  font-size: 35px;
 }
 .logo h1 {
-  font-size: 70px;
+  font-size: 30px;
   font-weight: 500;
   
 
@@ -46,10 +48,10 @@ nav {
 
 .links {
   display: flex;
-  gap: 2vw;
+  gap: 1vw;
  
   align-items: center;
-  padding-top: 15px;
+  padding-top: 5px;
   
 }
 
@@ -57,7 +59,7 @@ nav {
   text-decoration: none;
   color: black;
 
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 300;
   transition: 0.8s ease all;
   letter-spacing: 1px;
@@ -67,19 +69,21 @@ text-decoration: underline 1px solid black;
 
 }
 .n-right button {
-  border: 2px solid black;
-  padding: 15px 25px;
-  font-size: 33px;
+
+  padding: 8px 12px;
+  font-size: 20px;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   cursor: pointer;
   border-radius: 10px;
   color: rgb(255, 255, 255);
-  transition: 0.8s ease all;
+  transition: 0.3s ease all;
   background-color:black;
 }
 .n-right button:hover{
-  background-color: rgb(82, 22, 0);
+  background-color: white;
+  color:black;
+  border: 2px solid black;
 
 }
 .page1 {
@@ -96,7 +100,7 @@ padding: 1vw 2vw;
   
   position: relative;
 border-radius: 25px;
-box-shadow:  inset 5px 3px 50px black;
+box-shadow:  inset 2px 3px 10px black;
   background-position: 0% 70%;
 }
 .bottom-home{
@@ -117,8 +121,8 @@ box-shadow:  inset 5px 3px 50px black;
 }
 .home button {
   border: none;
-  font-size: 40px;
-padding: 15px;
+  font-size: 20px;
+padding: 10px 15px;
   border-radius: 10px;
   right: 5%;
   border: 2px solid rgb(255, 255, 255);
@@ -131,24 +135,24 @@ padding: 15px;
 }
 .home  button:hover{
   padding: 15px 30px;
-  box-shadow: 5px 0px 10px rgb(80, 80, 80);
+  box-shadow: 2px 0px 5px rgb(80, 80, 80);
 }
 .page2{
-  height: 80vh;
+
   width: 100vw;
  
   padding: 2vw 3vw;
 }
 .page2 h2{
-  font-size: 70px;
-  font-weight: 400;
+  font-size: 35px;
+  font-weight: 500;
 }
 .page2 p{
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.3;
   padding-top: 1vw;
-  color: rgb(78, 78, 78);
+  color: rgb(44, 44, 44);
 }
 .about-link{
   display: flex;
@@ -156,8 +160,7 @@ padding: 15px;
 padding: 2vw 0vw;
 }
 .card{
-  height: 40vh;
-  width: 33vw;
+
 
   display: flex;
   
@@ -165,20 +168,20 @@ padding: 2vw 0vw;
 .card{
   display: flex;
   flex-direction: column;
-  gap: 1.3vw;
+  gap: 1vw;
 }
 .card i {
-  font-size: 70px;
+  font-size: 30px;
   
   
 }
 .card h1{
-font-size: 55px;
+font-size: 30px;
 font-weight: 400;
 text-transform: capitalize;
 }
 .card h4{
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: rgb(78, 78, 78);
@@ -187,19 +190,19 @@ text-transform: capitalize;
 .page3{
   height:90vh;
   width: 100vw;
-  padding: 2vw 3vw;
+  padding: 0vw 3vw;
 
   
 }
 .page3 h1{
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 400;
     text-transform: capitalize;
 }
 .page3 h4{
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 300;
-  line-height: 1.3;
+  line-height: 1;
   padding-top: 1vw;
   color: rgb(78, 78, 78);
 }
@@ -207,7 +210,7 @@ text-transform: capitalize;
   width: 100vw;
 
 display: flex;
-gap: 2vw;
+gap: 1vw;
 
 margin-top: 2vw;
 
@@ -216,23 +219,23 @@ margin-top: 2vw;
   display: flex;
 
 flex-direction: column;
-gap: 0.5vw;
+justify-content: space-between;
 
-  width: 22vw;
+
 
 }
 .count-line h2{
-  font-size: 30px;
+  font-size: 13px;
   color: rgb(82, 82, 82);
 
 }
 .count-line h3{
-  font-size: 35px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 400;
 }
 .count-line img{
   width: 22vw;
-  height: 30vh;
+  height: 40vh;
 object-fit: cover;
 
 
@@ -278,20 +281,21 @@ margin-top: 10px;
   justify-content: space-between;
   font-weight: 300;
   align-items: center;
+  padding: 10px 0;
  
 }
 .day-money h4{
-  font-size: 35px;
+  font-size: 25px;
   
 }
 .day-money h5{
-  font-size: 27px;
-  color: rgb(85, 85, 85);
-  padding-top: 25px;
+  font-size: 20px;
+  color: rgb(39, 39, 39);
+padding-top: 10px;
 }
 
 .page4{
-  height:80vh;
+ 
   width: 100vw;
 overflow-x: hidden;
   display: flex;
@@ -335,18 +339,18 @@ object-fit: cover;
   
 }
 .page4-con h2{
-font-size: 70px;
+font-size: 35px;
 font-weight: 300;
 }
 .page4-con h1{
-  font-size: 120px;
+  font-size: 50px;
   font-weight: 600;
 }
 .page4-con button{
   padding: 15px;
   border: none;
   border-radius: 15px;
-  font-size: 40px;
+  font-size: 20px;
   border: 1px solid black;
   transition: 0.3s ease all;
   cursor: pointer;
@@ -354,8 +358,8 @@ font-weight: 300;
 
 }
 .page4-con button:hover{
-  padding: 15px 40px;
-  box-shadow:  5px 2px 15px rgb(43, 43, 43);
+  padding: 15px 20px;
+  box-shadow:  0px 0px 5px rgb(43, 43, 43);
 }
 .faq {
   padding:2vw 3vw;
@@ -365,7 +369,7 @@ font-weight: 300;
 }
 
 .faq h1 {
-  font-size: 5rem;
+  font-size: 2rem;
   color: #000000;
   margin-bottom: 15px;
   text-align: center;
@@ -382,29 +386,29 @@ font-weight: 300;
 }
 
 .faq summary {
-  font-size:3rem;
+  font-size:1.5rem;
   font-weight: 400;
   cursor: pointer;
   color: #000000;
-  transition: 0.8s ease all;
+  transition: 0.3s ease all;
 }
 
 .faq summary:hover {
- box-shadow:  0px 5px 10px rgb(114, 114, 114);
- padding: 20px;
+ box-shadow:  0px 0px 5px rgb(114, 114, 114);
+ padding: 10px;
 }
 
 .faq p {
-  margin: 5px 0;
-  font-size: 2.5rem;
+  margin: 10px 0;
+  font-size: 1.3rem;
   border-radius: 20px;
-  color: #555;
+  color: #2c2c2c;
 }
 .footer {
   background-color: #000000;
   color: #f2f2f2;
   padding:2vw 3vw;
-  height: 50vh;
+
   width: 100vw;
 }
 
@@ -425,16 +429,16 @@ gap: 2vw;
 }
 
 .footer h3 {
-  font-size: 4rem;
+  font-size: 2rem;
   margin-bottom: 10px;
   color: #00bcd4;
 }
 
 .footer p, .footer a {
-  font-size:2rem;
+  font-size:1rem;
   color: #f2f2f2;
   text-decoration: none;
-  line-height: 1.6;
+  line-height: 1.2;
   padding-top: 15px;
 }
 
@@ -467,8 +471,8 @@ gap: 2vw;
 
 
 .footer-social img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease;
   margin: 0 15px;
 }
@@ -479,13 +483,13 @@ gap: 2vw;
 
 .footer-bottom {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   border-top: 1px solid #333;
   padding-top: 10px;
 }
 
 .footer-bottom p {
-  font-size:2rem;
+  font-size:1.2rem;
   color: #727272;
 }
 
